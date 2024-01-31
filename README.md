@@ -9,10 +9,12 @@ Optimization objective:
 Total cost = 500 * Number of drivers + total drive minutes
 
 Constraints:
-Driver start/end location: (0, 0) \n
+Driver start/end location: (0, 0)
+
 Driver hours <= 12
 
-Input Format: ID PICKUP DROPOFF \n
+Input Format: ID PICKUP DROPOFF
+
 Output Format: List of Load IDs per driver
 
 Class Diagram:
