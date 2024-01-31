@@ -10,8 +10,7 @@ Total cost = 500 * Number of drivers + total drive minutes
 
 Constraints:
 Driver start/end location: (0, 0)
-
-Driver hours <= 12
+, Driver hours <= 12
 
 Input Format: ID PICKUP DROPOFF
 
