@@ -48,8 +48,15 @@ public class VRPSolver {
         List<Load> loads = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
+            boolean isHeader = true;
             String line;
             while ((line = reader.readLine()) != null) {
+
+                if(isHeader) {
+                    isHeader = false;
+                    continue;
+                }
+                
                 String[] parts = line.split("\\s+");
                 int id = Integer.parseInt(parts[0]);
                 String[] pickupCoords = parts[1].substring(1, parts[1].length() - 1).split(",");
